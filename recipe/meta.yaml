@@ -1,5 +1,5 @@
 {% set name = "sunkit-instruments" %}
-{% set version = "0.3.1" %}
+{% set version = "0.3.2" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 374a4141b8b31a88d5be0ad3aff9b4f19a1850bd118c8dcccccf4be24818cd3a
+  sha256: 1fb77cf35d906f644e3a4a8423469aae27e57898157dd7350193e90a46f62b08
 
 build:
   number: 0
