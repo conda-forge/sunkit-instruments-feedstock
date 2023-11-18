@@ -16,11 +16,11 @@ build:
 
 requirements:
   host:
-    - python >=3.8
+    - python >=3.9
     - pip
   run:
-    - python >=3.8
-    - sunpy >=4.0.0
+    - python >=3.9
+    - sunpy >=5.0.0
 
 test:
   requires:
@@ -52,3 +52,4 @@ extra:
   recipe-maintainers:
     - cadair
     - nabobalis
+    - wtbarnes
