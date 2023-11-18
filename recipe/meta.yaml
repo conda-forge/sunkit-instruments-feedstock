@@ -21,6 +21,12 @@ requirements:
   run:
     - python >=3.9
     - sunpy >=5.0.0
+    - pandas
+    - numpy
+    - scipy
+    - matplotlib
+    - h5py
+    - astropy
 
 test:
   requires:
