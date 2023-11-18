@@ -24,7 +24,7 @@ requirements:
     - pandas
     - numpy
     - scipy
-    - matplotlib
+    - matplotlib-base
     - h5py
     - astropy
 
