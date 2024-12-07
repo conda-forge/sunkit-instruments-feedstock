@@ -16,12 +16,12 @@ build:
 
 requirements:
   host:
-    - python {{ python_min }}
+    - python >={{ python_min }}
     - pip
     - setuptools
     - setuptools_scm
   run:
-    - python {{ python_min }}
+    - python >={{ python_min }}
     - sunpy >=5.0.0
     - pandas
     - numpy
