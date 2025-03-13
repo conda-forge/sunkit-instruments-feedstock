@@ -1,5 +1,6 @@
 {% set name = "sunkit-instruments" %}
 {% set version = "0.6.0" %}
+{% set python_min = "3.10.0" %}
 
 package:
   name: {{ name|lower }}
@@ -22,7 +23,7 @@ requirements:
     - setuptools_scm
   run:
     - python >={{ python_min }}
-    - sunpy >=5.0.0
+    - sunpy >=6.0.0
     - pandas
     - numpy
     - scipy
