@@ -1,6 +1,6 @@
 {% set name = "sunkit-instruments" %}
 {% set version = "0.6.2" %}
-{% set python_min = "3.10.0" %}
+{% set python_min = "3.10.3" %}
 
 package:
   name: {{ name|lower }}
