@@ -24,16 +24,19 @@ requirements:
   run:
     - python >={{ python_min }}
     - sunpy >=6.0.0
-    - pandas
-    - numpy
-    - scipy
-    - matplotlib-base
-    - h5py
-    - astropy-base
+    - xarray >=2023.12.0
+    - astropy-base >=5.3.0
+    - packaging >=23.0
+    - scipy >=1.9.0,!=1.10.0
+    - numpy >=1.23.5
+    - h5py >=3.7.0
+    - matplotlib-base >=3.6.0
+    - pandas >=1.4.0
 
 test:
   requires:
     - python {{ python_min }}
+    - pytest
     - pytest-astropy
     - pytest-doctestplus
     - pytest-mock
