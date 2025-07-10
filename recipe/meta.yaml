@@ -1,6 +1,6 @@
 {% set name = "sunkit-instruments" %}
-{% set version = "0.6.0" %}
-{% set python_min = "3.10.0" %}
+{% set version = "0.6.2" %}
+{% set python_min = "3.11" %}
 
 package:
   name: {{ name|lower }}
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name | replace('-', '_') }}-{{ version }}.tar.gz
-  sha256: 2178e881f2ae2970b8618325cca3528f7cba2d9c4f71966dbbab5a8f8aee4054
+  sha256: 042362eaddb87ef25a6689d86a0f2b2dbf174597cc08b53ff626546634e665b1
 
 build:
   number: 0
@@ -24,16 +24,19 @@ requirements:
   run:
     - python >={{ python_min }}
     - sunpy >=6.0.0
-    - pandas
-    - numpy
-    - scipy
-    - matplotlib-base
-    - h5py
-    - astropy-base
+    - xarray >=2023.12.0
+    - astropy-base >=5.3.0
+    - packaging >=23.0
+    - scipy >=1.9.0,!=1.10.0
+    - numpy >=1.23.5
+    - h5py >=3.7.0
+    - matplotlib-base >=3.6.0
+    - pandas >=1.4.0
 
 test:
   requires:
     - python {{ python_min }}
+    - pytest
     - pytest-astropy
     - pytest-doctestplus
     - pytest-mock
